@@ -1,0 +1,31 @@
+{
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "familylink_panel@norbertdudek.com.ar"
+    }
+  },
+  "manifest_version": 2,
+  "name": "Pinned Family Link",
+  "version": "1.2.0",
+  "description": "Go to the Family Link tab. If it doesn't exist, it's created.",
+  "icons": {
+    "48": "icons/familylink-48.png",
+    "64": "icons/familylink-64.png"
+  },
+  "permissions": [
+    "tabs",
+    "storage"
+  ],
+  "browser_action": {
+    "default_icon": {
+      "32": "icons/familylink-32.png"
+    },
+    "default_title": "Pinned Family Link",
+    "default_area": "navbar"
+  },
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  }
+}
